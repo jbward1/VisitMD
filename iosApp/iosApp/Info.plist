@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-        <key>CADisableMinimumFrameDurationOnPhone</key>
-        <true/>
-        <key>ITSAppUsesNonExemptEncryption</key>
-        <false/>
-        <key>NSFaceIDUsageDescription</key>
-        <string>MedScribe uses Face ID to keep patient notes private.</string>
-    </dict>
+<dict>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>NSFaceIDUsageDescription</key>
+	<string>MedScribe uses Face ID to keep patient notes private.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>MedScribe records visits so it can write the transcript and notes. Audio stays on this device.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>MedScribe turns visit recordings into text on this device. Nothing is uploaded.</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+	</array>
+</dict>
 </plist>
